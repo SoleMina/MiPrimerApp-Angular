@@ -51,4 +51,22 @@
 <input type="radio" name="sexo" value="f" (click)="setGenero($event)" />
 <span>Maculino:</span>
 <input type="radio" name="sexo" value="m" (click)="setGenero($event)" />
+<br />
+<br />
+<span>Nacionalidad: </span>
+{{ textoNacionalidad }}
+<br />
+<span>Peruana: </span>
+<input
+  type="radio"
+  name="nacionalidad"
+  value="p"
+  (click)="setNacionalidad($event)"
+/>
+<input
+  type="radio"
+  name="nacionalidad"
+  value="e"
+  (click)="setNacionalidad($event)"
+/>
 {{ getRegistroUsuario() }}

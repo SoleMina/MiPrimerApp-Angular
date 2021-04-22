@@ -24,6 +24,7 @@ export class EmpleadoComponent implements OnInit {
 
   textoDeRegistro = 'No hay nadie registrado';
   textoGenero = '';
+  textoNacionalidad = '';
   //textoRegistrado = 'Registrado';
 
   getRegistroUsuario() {
@@ -36,6 +37,13 @@ export class EmpleadoComponent implements OnInit {
       this.textoDeRegistro = 'El usuario se acaba de registrar';
     } else {
       this.textoDeRegistro = 'Usuario no registrado';
+    }
+  }
+  setNacionalidad(event: Event) {
+    if ((<HTMLInputElement>event.target).value == 'p') {
+      this.textoNacionalidad = 'Peruan(a)';
+    } else {
+      this.textoNacionalidad = 'Ecuatorian(a)';
     }
   }
 
